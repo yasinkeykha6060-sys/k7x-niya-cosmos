@@ -20,7 +20,7 @@
 
 ## بخش شخصی
 
-`data/personal.json` را عوض کن: `starName`، `planetName`، `systemName`، `designation`، `message`، `discoveryDate`، `discoverers`. دوره‌ی گردش در صفحه از قانون سوم کپلر با جرم و نیم‌قطر همان فایل حساب می‌شود و برچسب محاسبه دارد. سیاره خیالی است و ثبت رسمی ندارد.
+`data/personal.json` را عوض کن: `starName`، `planetName`، `systemName`، `designation`، `message`، `discoveryDate`، `discoverers`، و برای سیاره‌ی نیایا: `niayaName`، `metDate`، `niayaNote`. دوره‌ی گردش در صفحه از قانون سوم کپلر با جرم و نیم‌قطر همان فایل حساب می‌شود و برچسب محاسبه دارد. سیاره خیالی است و ثبت رسمی ندارد.
 
 ## چه چیزهایی ساده‌تر مانده
 

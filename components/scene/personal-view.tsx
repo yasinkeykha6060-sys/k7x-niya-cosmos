@@ -18,6 +18,12 @@ export function PersonalView() {
   spinRef.current = spin;
   tintRef.current = tint;
   const year = Math.sqrt((personal.semiMajorAxisAu ** 3) / personal.starMassSun);
+  const niayaYear = Math.sqrt((personal.niayaSemiMajorAxisAu ** 3) / personal.starMassSun);
+  const [since, setSince] = useState(0);
+  useEffect(() => {
+    const epoch = Date.parse(`${personal.metDate}T00:00:00Z`);
+    setSince(Math.max(0, Math.floor((Date.now() - epoch) / 86400000)));
+  }, []);
 
   useEffect(() => {
     const el = host.current;
@@ -80,6 +86,32 @@ export function PersonalView() {
       const moonA = new THREE.Mesh(new THREE.SphereGeometry(0.12, 16, 12), new THREE.MeshStandardMaterial({ color: 0xc8c8c8, roughness: 1 }));
       const moonB = new THREE.Mesh(new THREE.SphereGeometry(0.07, 16, 12), new THREE.MeshStandardMaterial({ color: 0xb9b1a4, roughness: 1 }));
       scene.add(moonA, moonB);
+      const pair = new THREE.Group();
+      const pairMat = (seed: number, sea: string) => new THREE.ShaderMaterial({
+        uniforms: { time: { value: seed }, sea: { value: new THREE.Color(sea) } },
+        vertexShader: "varying vec3 vP; varying vec3 vN; void main(){ vP=position; vN=normalize(normalMatrix*normal); gl_Position=projectionMatrix*modelViewMatrix*vec4(position,1.0); }",
+        fragmentShader: `
+          varying vec3 vP; varying vec3 vN; uniform float time; uniform vec3 sea;
+          float hash(vec3 p){ return fract(sin(dot(p, vec3(127.1,311.7,74.7))) * 43758.5453); }
+          float noise(vec3 p){ vec3 i=floor(p); vec3 f=fract(p); f=f*f*(3.0-2.0*f); float n=mix(mix(mix(hash(i),hash(i+vec3(1,0,0)),f.x),mix(hash(i+vec3(0,1,0)),hash(i+vec3(1,1,0)),f.x),f.y),mix(mix(hash(i+vec3(0,0,1)),hash(i+vec3(1,0,1)),f.x),mix(hash(i+vec3(0,1,1)),hash(i+vec3(1,1,1)),f.x),f.y),f.z); return n; }
+          void main(){
+            vec3 p = normalize(vP);
+            float n = noise(p*3.2+time)+0.45*noise(p*7.0);
+            float land = smoothstep(0.5, 0.58, n);
+            vec3 ground = mix(vec3(0.25,0.34,0.18), vec3(0.48,0.36,0.24), noise(p*9.0));
+            vec3 col = mix(sea, ground, land);
+            col = mix(col, vec3(0.93,0.95,0.97), smoothstep(0.78, 0.92, abs(p.y)));
+            col = mix(col, vec3(1.0), smoothstep(0.62, 0.82, noise(p*5.0)) * 0.35);
+            float fres = pow(1.0 - max(dot(normalize(vN), vec3(0.0,0.0,1.0)), 0.0), 2.4);
+            col += vec3(0.55,0.62,0.78) * fres * 0.35;
+            gl_FragColor = vec4(col, 1.0);
+          }
+        `,
+      });
+      const one = new THREE.Mesh(new THREE.SphereGeometry(0.34, 40, 28), pairMat(0.2, "#1a4c78"));
+      const two = new THREE.Mesh(new THREE.SphereGeometry(0.31, 40, 28), pairMat(2.4, "#245a62"));
+      pair.add(one, two);
+      scene.add(pair);
       scene.add(new THREE.AmbientLight(0xffffff, 0.25));
       const sun = new THREE.PointLight(0xffe0c2, 18, 0, 2);
       sun.position.copy(star.position);
@@ -104,6 +136,13 @@ export function PersonalView() {
         planet.rotation.y = now * 0.0002 * spinRef.current;
         moonA.position.set(Math.cos(now * 0.0004) * 1.7, 0.1, Math.sin(now * 0.0004) * 1.7);
         moonB.position.set(Math.cos(now * 0.00025 + 1) * 2.15, -0.05, Math.sin(now * 0.00025 + 1) * 2.15);
+        const epoch = Date.parse(`${personal.metDate}T00:00:00Z`);
+        const days = (Date.now() - epoch) / 86400000;
+        const theta = (days / (niayaYear * 365.25)) * Math.PI * 2;
+        const spin = (days / personal.niayaBinaryDays) * Math.PI * 2;
+        pair.position.set(-2.4 + Math.cos(theta) * 3.5, 0.35, Math.sin(theta) * 3.5);
+        one.position.set(Math.cos(spin) * 0.62, 0, Math.sin(spin) * 0.62);
+        two.position.set(-Math.cos(spin) * 0.62, 0, -Math.sin(spin) * 0.62);
         controls.update();
         renderer.render(scene, camera);
       };
@@ -137,6 +176,10 @@ export function PersonalView() {
     g.fillText(personal.discoverers, 120, 450);
     g.fillText(personal.discoveryDate, 120, 510);
     g.fillText(personal.message, 120, 620);
+    g.fillStyle = "#ff8fc2";
+    g.fillText(`${personal.niayaName}  ·  ${personal.niayaDesignation}`, 120, 720);
+    g.fillStyle = "#f4eef8";
+    g.fillText(personal.metDateFa, 120, 780);
     const a = document.createElement("a");
     a.href = canvas.toDataURL("image/png");
     a.download = "yn-001.png";
@@ -149,6 +192,10 @@ export function PersonalView() {
       <p className="lede">{personal.disclaimer}</p>
       <p>{personal.message}</p>
       <p>کد <bdi className="num">{personal.planetDesignation}</bdi> به گرد ستاره‌ی {personal.starName} (<bdi className="num">{personal.designation}</bdi>). رده‌ی فرضی ستاره {personal.starClass}. دوره‌ی گردش از قانون سوم کپلر با جرم {personal.starMassSun} برابر خورشید و نیم‌قطر {personal.semiMajorAxisAu} واحد نجومی: <bdi className="num">{year.toFixed(3)}</bdi> سال. این عدد محاسبه است، نه رصد.</p>
+      <h2>{personal.niayaName}</h2>
+      <p className="lede ltr">{personal.niayaNameEn} · {personal.niayaDesignation}</p>
+      <p>{personal.niayaNote}</p>
+      <p>آغاز: <bdi className="num">{personal.metDate}</bdi>، {personal.metDateFa}. از آن روز <bdi className="num">{since}</bdi> شبانه‌روز گذشته. نیم‌قطر فرضی {personal.niayaSemiMajorAxisAu} واحد نجومی و دوره‌ی گردش محاسبه‌شده <bdi className="num">{niayaYear.toFixed(3)}</bdi> سال. دو کره هر <bdi className="num">{personal.niayaBinaryDays}</bdi> روز یک‌بار دور هم می‌گردند؛ این دوره هم فرضی است.</p>
       <div className="stage" ref={host} />
       <div className="grid" style={{ marginTop: 12 }}>
         <label>سطح اقیانوس <input type="range" min="0.3" max="0.75" step="0.01" value={ocean} onChange={(e) => setOcean(Number(e.target.value))} /></label>
