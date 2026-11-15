@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GlobeView } from "@/components/scene/globe-view";
 import { exoplanets, systems } from "@/lib/catalog";
 
 export function generateStaticParams() {
@@ -15,6 +16,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       <h1>{planet.nameFa}</h1>
       <p className="lede ltr">{planet.nameEn}</p>
       {system?.fictional && <p className="note">سیاره‌ی خیالی و نام‌گذاری شخصی؛ ثبت رسمی ندارد.</p>}
+      <GlobeView color="#7f93a8" note="سطح این سیاره تصویر نشده و شعاعش در داده نیست. اندازهٔ کره مقیاس نیست." />
       <p>{planet.summaryFa}</p>
       {planet.discoveryYear && <p>سال اعلام: <bdi className="num">{planet.discoveryYear}</bdi>{planet.methodFa ? `، روش ${planet.methodFa}` : ""}.</p>}
       {system && <p>سامانه: <Link href={`/systems/${system.slug}/`}>{system.nameFa}</Link></p>}

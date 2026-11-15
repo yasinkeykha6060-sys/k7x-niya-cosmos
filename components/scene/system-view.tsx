@@ -33,7 +33,7 @@ type Mode = "real" | "nav";
 
 export function SystemView() {
   const host = useRef<HTMLDivElement>(null);
-  const labels = useRef<HTMLDivElement>(null);
+  const scaleNote = useRef<HTMLParagraphElement>(null);
   const { quality } = usePrefs();
   const [fallback, setFallback] = useState("");
   const [mode, setMode] = useState<Mode>("real");
@@ -186,6 +186,20 @@ export function SystemView() {
       const moon = new THREE.Mesh(new THREE.SphereGeometry(1, 32, 24), new THREE.MeshStandardMaterial({ map: moonTex ?? undefined, color: moonTex ? 0xffffff : 0xc8c8c8, roughness: 1 }));
       scene.add(moon);
 
+      const galilean = [
+        { key: "io" as const, slug: "io", km: 1821.6, tex: "io.jpg" },
+        { key: "europa" as const, slug: "europa", km: 1560.8, tex: "europa.jpg" },
+        { key: "ganymede" as const, slug: "ganymede", km: 2631.2, tex: "ganymede.jpg" },
+        { key: "callisto" as const, slug: "callisto", km: 2410.3, tex: "callisto.jpg" },
+      ];
+      const gMoons: { slug: string; key: "io" | "europa" | "ganymede" | "callisto"; km: number; mesh: import("three").Mesh }[] = [];
+      for (const moonBody of galilean) {
+        const tex = await loadTex(moonBody.tex);
+        const mesh = new THREE.Mesh(new THREE.SphereGeometry(1, 24, 18), new THREE.MeshStandardMaterial({ map: tex ?? undefined, color: tex ? 0xffffff : 0xc8c8c8, roughness: 1 }));
+        scene.add(mesh);
+        gMoons.push({ slug: moonBody.slug, key: moonBody.key, km: moonBody.km, mesh });
+      }
+
       const belt = new THREE.InstancedMesh(new THREE.SphereGeometry(1, 4, 3), new THREE.MeshStandardMaterial({ color: 0x9a907f, roughness: 1 }), 900);
       const dummy = new THREE.Object3D();
       for (let i = 0; i < 900; i += 1) {
@@ -221,9 +235,11 @@ export function SystemView() {
         pointer.x = ((event.clientX - rect.left) / rect.width) * 2 - 1;
         pointer.y = -((event.clientY - rect.top) / rect.height) * 2 + 1;
         ray.setFromCamera(pointer, camera);
-        const hit = ray.intersectObjects(items.map((item) => item.mesh), false)[0];
+        const hit = ray.intersectObjects([...items.map((item) => item.mesh), ...gMoons.map((item) => item.mesh)], false)[0];
         const found = items.find((item) => item.mesh === hit?.object);
+        const foundMoon = gMoons.find((item) => item.mesh === hit?.object);
         if (found) setFocus(found.slug);
+        else if (foundMoon) setFocus(foundMoon.slug);
       };
       renderer.domElement.addEventListener("pointerdown", onClick);
 
@@ -274,9 +290,24 @@ export function SystemView() {
           moon.position.copy(earthPos).add(modeRef.current === "nav" ? rel.clone().normalize().multiplyScalar(Math.max(rad(6371) * 5, 1.4)) : rel);
         }
         belt.visible = modeRef.current === "nav";
+        const jm = A.JupiterMoons(date);
+        const jupiter = A.HelioVector(A.Body.Jupiter, date);
+        gMoons.forEach((item, index) => {
+          const rel = jm[item.key];
+          item.mesh.scale.setScalar(rad(item.km));
+          if (modeRef.current === "real") {
+            item.mesh.position.copy(place(jupiter.x + rel.x, jupiter.y + rel.y, jupiter.z + rel.z));
+          } else {
+            const jPos = place(jupiter.x, jupiter.y, jupiter.z);
+            const offset = new THREE.Vector3(rel.x, rel.z, -rel.y);
+            item.mesh.position.copy(jPos).add(offset.normalize().multiplyScalar((2.4 + index * 0.7) * rad(69911)));
+          }
+        });
         const target = items.find((item) => item.slug === focusRef.current) ?? earth;
-        if (target && !reduced) {
-          controls.target.lerp(target.pivot.position, 0.08);
+        const moonTarget = gMoons.find((item) => item.slug === focusRef.current);
+        const lookAt = moonTarget ? moonTarget.mesh.position : target?.pivot.position;
+        if (lookAt && !reduced) {
+          controls.target.lerp(lookAt, 0.08);
         }
         controls.update();
         renderer.render(scene, camera);
@@ -287,9 +318,7 @@ export function SystemView() {
           renderer.setPixelRatio(0.8);
           fpsLow = 0;
         }
-        if (labels.current && target) {
-          labels.current.textContent = modeRef.current === "real" ? "مقیاس واقعی" : "مقیاس ناوبری";
-        }
+        if (scaleNote.current) scaleNote.current.textContent = modeRef.current === "real" ? "مقیاس واقعی" : "مقیاس ناوبری";
       };
       frame = requestAnimationFrame(loop);
       disposers.push(() => {
@@ -317,10 +346,17 @@ export function SystemView() {
   return (
     <div className="stage" ref={host} aria-label="منظومه‌ی شمسی">
       {fallback && <div className="overlay-copy panel"><p>{fallback}</p></div>}
-      <div className="hud panel" ref={labels}>
+      <div className="hud panel">
         <div className="meta"><bdi className="num" ref={clock}>UTC</bdi></div>
-        <label>نگاه<select value={focus} onChange={(e) => setFocus(e.target.value)}>{WORLDS.map((w) => <option key={w.slug} value={w.slug}>{NAMES[w.slug]}</option>)}</select></label>
-        <Link className="btn" href={focus === "pluto" ? "/dwarf-planets/pluto/" : `/planets/${focus}/`}>صفحه‌ی جرم</Link>
+        <p className="meta" ref={scaleNote}>مقیاس واقعی</p>
+        <label>نگاه<select value={focus} onChange={(e) => setFocus(e.target.value)}>
+          {WORLDS.map((w) => <option key={w.slug} value={w.slug}>{NAMES[w.slug]}</option>)}
+          <option value="io">یو</option>
+          <option value="europa">اروپا</option>
+          <option value="ganymede">گانیمد</option>
+          <option value="callisto">کالیستو</option>
+        </select></label>
+        <Link className="btn" href={focus === "pluto" ? "/dwarf-planets/pluto/" : ["io", "europa", "ganymede", "callisto"].includes(focus) ? `/moons/${focus}/` : `/planets/${focus}/`}>صفحه‌ی جرم</Link>
       </div>
       <div className="timebar panel">
         <button className="btn" type="button" onClick={() => { dateRef.current = Date.now(); rateRef.current = 1; }}>اکنون</button>

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { bodies, bySlug, childrenOf, spacecraft, type Body } from "@/lib/catalog";
+import { GlobeView, bodyGlobeNote } from "@/components/scene/globe-view";
 import { Num } from "./num";
 
 const KIND: Record<Body["kind"], string> = {
@@ -73,6 +74,18 @@ export function BodyPage({ body }: { body: Body }) {
       <p className="meta">{KIND[body.kind]}{parent ? ` · ${parent.nameFa}` : ""}</p>
       <h1>{body.nameFa}</h1>
       <p className="lede"><span className="ltr">{body.nameEn}</span></p>
+      <GlobeView
+        texture={body.texture}
+        night={body.nightTexture}
+        clouds={body.cloudTexture}
+        ring={body.slug === "saturn" ? "saturn" : body.ring ? "faint" : undefined}
+        tilt={body.axialTiltDeg}
+        spinHours={body.rotationHours}
+        color={bodyGlobeNote(body.slug, body.texture).color ?? (body.slug === "sun" ? "#ffd27a" : undefined)}
+        emissive={body.slug === "sun"}
+        axes={body.radiusAxesKm}
+        note={bodyGlobeNote(body.slug, body.texture).note}
+      />
       <p>{body.summaryFa}</p>
       {body.tempNoteFa && <p className="note">{body.tempNoteFa}</p>}
       {live && <p><bdi className="num">{live}</bdi></p>}

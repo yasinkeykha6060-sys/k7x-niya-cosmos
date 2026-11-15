@@ -113,7 +113,7 @@
     "id": "phobos", "slug": "phobos", "kind": "moon", "parentId": "mars",
     "nameFa": "فوبوس", "nameEn": "Phobos",
     "summaryFa": "قمر درونی مریخ. شکلش کروی نیست؛ سه نیم‌محور و جرم از برگه‌ی ناسا آمده، نه یک شعاع میانگین ساختگی.",
-    "radiusAxesKm": [13, 11.4, 9.1], "massKg": 1.06e16, "densityKgM3": 1900,
+    "radiusAxesKm": [13, 11.4, 9.1], "massKg": 1.06e16, "densityKgM3": 1900, "texture": "phobos.jpg",
     "orbitalPeriodDays": 0.31891, "semiMajorAxisKm": 9378, "eccentricity": 0.0151, "inclinationDeg": 1.08,
     "sources": [{ "name": "NASA Planetary Fact Sheet: Mars, satellites", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", "retrieved": "2026-11-15" }]
   },
@@ -121,7 +121,7 @@
     "id": "deimos", "slug": "deimos", "kind": "moon", "parentId": "mars",
     "nameFa": "دیموس", "nameEn": "Deimos",
     "summaryFa": "قمر بیرونی و کوچک‌تر مریخ.",
-    "radiusAxesKm": [7.8, 6, 5.1], "massKg": 2.4e15, "densityKgM3": 1750,
+    "radiusAxesKm": [7.8, 6, 5.1], "massKg": 2.4e15, "densityKgM3": 1750, "texture": "deimos.jpg",
     "orbitalPeriodDays": 1.26244, "semiMajorAxisKm": 23459, "eccentricity": 0.0005, "inclinationDeg": 1.79,
     "sources": [{ "name": "NASA Planetary Fact Sheet: Mars, satellites", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", "retrieved": "2026-11-15" }]
   },
@@ -144,28 +144,28 @@
     "id": "io", "slug": "io", "kind": "moon", "parentId": "jupiter",
     "nameFa": "یو", "nameEn": "Io",
     "summaryFa": "درونی‌ترین قمر بزرگ مشتری و فعال‌ترین جسم آتشفشانی شناخته‌شده. شعاع از ثابت منتشرشده در astronomy-engine است که با شعاع‌های متداول JPL یکی است. جرم را نیاورده‌ام.",
-    "radiusKm": 1821.6,
+    "radiusKm": 1821.6, "texture": "io.jpg",
     "sources": [{ "name": "astronomy-engine 2.1.19, IO_RADIUS_KM", "url": "https://github.com/cosinekitty/astronomy", "retrieved": "2026-11-15" }]
   },
   {
     "id": "europa", "slug": "europa", "kind": "moon", "parentId": "jupiter",
     "nameFa": "اروپا", "nameEn": "Europa",
     "summaryFa": "قمر یخی مشتری. زیر پوسته‌ی یخ، اقیانوس آب محتمل است؛ این جمله را به‌عنوان نتیجه‌ی قطعی اندازه‌گیری جرم آب ننویس، فقط به‌عنوان تفسیر رایج از داده‌های گالیله.",
-    "radiusKm": 1560.8,
+    "radiusKm": 1560.8, "texture": "europa.jpg",
     "sources": [{ "name": "astronomy-engine 2.1.19, EUROPA_RADIUS_KM", "url": "https://github.com/cosinekitty/astronomy", "retrieved": "2026-11-15" }]
   },
   {
     "id": "ganymede", "slug": "ganymede", "kind": "moon", "parentId": "jupiter",
     "nameFa": "گانیمد", "nameEn": "Ganymede",
     "summaryFa": "بزرگ‌ترین قمر سامانه، بزرگ‌تر از تیر.",
-    "radiusKm": 2631.2,
+    "radiusKm": 2631.2, "texture": "ganymede.jpg",
     "sources": [{ "name": "astronomy-engine 2.1.19, GANYMEDE_RADIUS_KM", "url": "https://github.com/cosinekitty/astronomy", "retrieved": "2026-11-15" }]
   },
   {
     "id": "callisto", "slug": "callisto", "kind": "moon", "parentId": "jupiter",
     "nameFa": "کالیستو", "nameEn": "Callisto",
     "summaryFa": "بیرونی‌ترین قمر گالیله‌ای، سطحی پر از دهانه و کهن.",
-    "radiusKm": 2410.3,
+    "radiusKm": 2410.3, "texture": "callisto.jpg",
     "sources": [{ "name": "astronomy-engine 2.1.19, CALLISTO_RADIUS_KM", "url": "https://github.com/cosinekitty/astronomy", "retrieved": "2026-11-15" }]
   },
   {
