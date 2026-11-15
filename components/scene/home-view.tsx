@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useEffect, useRef, useState } from "react";
 import { asset } from "@/lib/paths";
@@ -111,7 +112,14 @@ export function HomeView() {
     <div className="stage stage-full" ref={host}>
       <div className="overlay-copy panel">
         <h1>نیایش جانم، این آلبوم کل جهان رو برای توئه. هر جا دلت خواست برو.</h1>
-        <p className="lede">زمین و ماه، با نور و بافت واقعی. بقیه‌ی بخش‌ها از همین‌جا بازند.</p>
+        <p className="lede">زمین و ماه اینجاست. سیاره‌ها، قمرها و ستاره‌ها در آلبوم فهرست شده‌اند.</p>
+        <nav className="album-links" aria-label="بخش‌های آلبوم">
+          <Link href="/catalog/#planets">سیاره‌ها</Link>
+          <Link href="/catalog/#moons">قمرها</Link>
+          <Link href="/catalog/#stars">ستاره‌ها</Link>
+          <Link href="/catalog/#systems">سامانه‌ها</Link>
+          <Link href="/catalog/">همه‌ی آلبوم</Link>
+        </nav>
       </div>
       {fallback && <p className="hud panel">{fallback}</p>}
     </div>

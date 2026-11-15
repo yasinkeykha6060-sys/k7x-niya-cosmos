@@ -17,6 +17,18 @@ const WORLDS = [
   { slug: "pluto", body: "Pluto", km: 1188, tex: "", tilt: 119.51, hours: -153.3, color: 0xc4b4a2 },
 ] as const;
 
+const NAMES: Record<(typeof WORLDS)[number]["slug"], string> = {
+  mercury: "تیر",
+  venus: "ناهید",
+  earth: "زمین",
+  mars: "مریخ",
+  jupiter: "مشتری",
+  saturn: "زحل",
+  uranus: "اورانوس",
+  neptune: "نپتون",
+  pluto: "پلوتون",
+};
+
 type Mode = "real" | "nav";
 
 export function SystemView() {
@@ -307,7 +319,7 @@ export function SystemView() {
       {fallback && <div className="overlay-copy panel"><p>{fallback}</p></div>}
       <div className="hud panel" ref={labels}>
         <div className="meta"><bdi className="num" ref={clock}>UTC</bdi></div>
-        <label>نگاه<select value={focus} onChange={(e) => setFocus(e.target.value)}>{WORLDS.map((w) => <option key={w.slug} value={w.slug}>{w.slug}</option>)}</select></label>
+        <label>نگاه<select value={focus} onChange={(e) => setFocus(e.target.value)}>{WORLDS.map((w) => <option key={w.slug} value={w.slug}>{NAMES[w.slug]}</option>)}</select></label>
         <Link className="btn" href={focus === "pluto" ? "/dwarf-planets/pluto/" : `/planets/${focus}/`}>صفحه‌ی جرم</Link>
       </div>
       <div className="timebar panel">

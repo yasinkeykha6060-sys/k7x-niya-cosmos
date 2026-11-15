@@ -10,6 +10,7 @@ import { PrefsProvider, usePrefs } from "./prefs";
 
 const LINKS = [
   { href: "/", label: "خانه" },
+  { href: "/catalog/", label: "آلبوم" },
   { href: "/solar-system/", label: "منظومه" },
   { href: "/sky/", label: "آسمان" },
   { href: "/spacecraft/", label: "فضاپیما" },
@@ -22,6 +23,7 @@ const LINKS = [
 
 function crumbs(path: string): { href: string; label: string }[] {
   const map: Record<string, string> = {
+    catalog: "آلبوم",
     "solar-system": "منظومه‌ی شمسی",
     planets: "سیاره‌ها",
     moons: "قمرها",
@@ -150,6 +152,7 @@ function Frame({ children }: { children: React.ReactNode }) {
       <div id="content">{children}</div>
       <nav className="bottomnav" aria-label="موبایل">
         <Link href="/">خانه</Link>
+        <Link href="/catalog/">آلبوم</Link>
         <Link href="/solar-system/">منظومه</Link>
         <Link href="/sky/">آسمان</Link>
         <Link href="/spacecraft/">فضاپیما</Link>

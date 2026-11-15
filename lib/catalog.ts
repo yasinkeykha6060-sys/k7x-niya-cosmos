@@ -57,6 +57,7 @@ export function searchIndex(): SearchHit[] {
     { href: "/yasin-niyayesh/", title: "نیایش", en: "Niyayesh", kind: "شخصی" },
     { href: "/yasin-niyayesh/", title: "YN-001", en: "YN-001 b", kind: "شخصی" },
     { href: "/simulator/", title: "شبیه‌ساز", en: "simulator", kind: "ابزار" },
+    { href: "/catalog/", title: "آلبوم", en: "catalog planets stars", kind: "فهرست" },
   ];
   for (const body of bodies) {
     const root = body.kind === "planet" ? "planets" : body.kind === "moon" ? "moons" : body.kind === "dwarf-planet" ? "dwarf-planets" : body.kind === "small-body" ? "small-bodies" : "stars";
