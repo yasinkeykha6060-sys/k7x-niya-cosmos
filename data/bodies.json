@@ -1,0 +1,271 @@
+[
+  {
+    "id": "sun", "slug": "sun", "kind": "star", "astroBody": "Sun",
+    "nameFa": "خورشید", "nameEn": "Sun",
+    "summaryFa": "ستاره‌ی سامانه‌ی ما، از رده‌ی G2V. شعاع، درخشندگی، دمای مؤثر و حاصل‌ضرب جرم در ثابت گرانش اینجا همان ثابت‌های نامی اتحادیه‌ی بین‌المللی نجوم در قطعنامه‌ی B3 سال ۲۰۱۵ است، نه یک اندازه‌گیری واحد در یک روز خاص.",
+    "radiusKm": 695700,
+    "texture": "sun.jpg",
+    "sources": [{ "name": "IAU Resolution B3 (2015), nominal solar values", "url": "https://www.iau.org/static/resolutions/IAU2015_English.pdf", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "mercury", "slug": "mercury", "kind": "planet", "astroBody": "Mercury",
+    "nameFa": "تیر", "nameEn": "Mercury", "moonCount": 0,
+    "summaryFa": "درونی‌ترین سیاره‌ی سامانه. جو در عمل یک اگزوسفر بسیار رقیق است و سطح، اختلاف دمای شدیدی میان روز و شب دارد.",
+    "historyFa": "از دوران باستان شناخته شده است. نقشه‌ی امروزی سطح عمدتاً از مدارگرد مسنجر به دست آمده.",
+    "radiusKm": 2439.7, "massKg": 3.301e23, "densityKgM3": 5429, "gravityMs2": 3.7, "escapeKms": 4.3,
+    "rotationHours": 1407.6, "axialTiltDeg": 0.034, "orbitalPeriodDays": 87.969,
+    "semiMajorAxisKm": 57909000, "eccentricity": 0.2056, "inclinationDeg": 7.004,
+    "blackBodyK": 439.6, "meanTempK": 440,
+    "tempNoteFa": "دمای میانگین حدود ۴۴۰ کلوین. سمت رو به خورشید در برگه‌ی ناسا در بازه‌ی ۵۹۰ تا ۷۲۵ کلوین آمده است.",
+    "atmosphereFa": "فشار سطحی کمتر از حدود ۵×۱۰⁻¹⁵ بار. اگزوسفر شامل سدیم، منیزیم، اکسیژن و چند گونه‌ی دیگر است و چگالی‌شان با زمان محلی عوض می‌شود.",
+    "texture": "mercury.jpg",
+    "visitors": ["mariner-10", "messenger"],
+    "sources": [{ "name": "NASA Planetary Fact Sheet: Mercury", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/mercuryfact.html", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "venus", "slug": "venus", "kind": "planet", "astroBody": "Venus",
+    "nameFa": "ناهید", "nameEn": "Venus", "moonCount": 0,
+    "summaryFa": "همسایه‌ی زمین، با جوی بسیار غلیظ از کربن دی‌اکسید. چرخش نسبت به بیشتر سیاره‌ها وارونه است و یک روز خورشیدی‌اش از سالش بلندتر است.",
+    "historyFa": "از دوران باستان شناخته شده. سطح را رادار ماژلان نقشه کرده، چون ابرهای دائمی سطح را از دید مرئی پنهان می‌کنند.",
+    "radiusKm": 6051.8, "massKg": 4.8673e24, "densityKgM3": 5243, "gravityMs2": 8.87, "escapeKms": 10.36,
+    "rotationHours": -5832.6, "axialTiltDeg": 177.36, "orbitalPeriodDays": 224.701,
+    "semiMajorAxisKm": 108210000, "eccentricity": 0.0068, "inclinationDeg": 3.395,
+    "blackBodyK": 226.6, "meanTempK": 737, "pressureBar": 92,
+    "tempNoteFa": "۷۳۷ کلوین دمای میانگین سطح است. دمای جسم سیاه جداگانه ۲۲۶٫۶ کلوین است و دمای سطح نیست.",
+    "atmosphereFa": "نزدیک سطح، حدود ۹۶٫۵ درصد کربن دی‌اکسید و ۳٫۵ درصد نیتروژن. فشار سطح ۹۲ بار.",
+    "weatherFa": "باد سطحی در برگه‌ی ناسا ۰٫۳ تا ۱ متر بر ثانیه آمده است. اختلاف دمای شبانه‌روزی سطح تقریباً صفر است.",
+    "texture": "venus.jpg",
+    "visitors": ["venera", "magellan"],
+    "sources": [{ "name": "NASA Planetary Fact Sheet: Venus", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/venusfact.html", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "earth", "slug": "earth", "kind": "planet", "astroBody": "Earth",
+    "nameFa": "زمین", "nameEn": "Earth", "moonCount": 1,
+    "summaryFa": "تنها سیاره‌ای که روی سطحش آب مایع پایدار و زیست را، تا امروز، مستقیم دیده‌ایم. شعاع میانگین، جرم و گرانش از ستون زمین در برگه‌های سیاره‌ای ناسا آمده است.",
+    "radiusKm": 6371, "massKg": 5.9722e24, "densityKgM3": 5513, "gravityMs2": 9.82, "escapeKms": 11.19,
+    "rotationHours": 23.9345, "axialTiltDeg": 23.44, "orbitalPeriodDays": 365.256,
+    "semiMajorAxisKm": 149598000, "eccentricity": 0.0167, "inclinationDeg": 0,
+    "blackBodyK": 254,
+    "tempNoteFa": "۲۵۴ کلوین دمای جسم سیاه است، نه میانگین دمای سطح. میانگین سطح در این صفحه نیامده چون در همین جدول جدا ثبت نشده است.",
+    "atmosphereFa": "جو نیتروژن–اکسیژن با ابر و چرخه‌ی آب. درصدها را اینجا نیاورده‌ام تا با یک جدول تأییدشده در همین نسخه قاطی نشود.",
+    "interior": [
+      { "nameFa": "پوسته", "nameEn": "Crust" },
+      { "nameFa": "گوشته", "nameEn": "Mantle" },
+      { "nameFa": "هسته", "nameEn": "Core", "noteFa": "شعاع هسته در ستون زمین برگه‌ی مریخ، ۳۴۸۵ کیلومتر آمده است." }
+    ],
+    "texture": "earth-day.jpg", "nightTexture": "earth-night.jpg", "cloudTexture": "earth-clouds.jpg",
+    "visitors": ["iss"],
+    "sources": [
+      { "name": "NASA Planetary Fact Sheet (Earth column)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/", "retrieved": "2026-11-15" },
+      { "name": "NASA Planetary Fact Sheet: Mars (Earth core radius column)", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", "retrieved": "2026-11-15" }
+    ]
+  },
+  {
+    "id": "moon", "slug": "moon", "kind": "moon", "parentId": "earth", "astroBody": "Moon",
+    "nameFa": "ماه", "nameEn": "Moon",
+    "summaryFa": "قمر زمین، در قفل کشندی: دوره‌ی گردش و چرخشش یکی است، برای همین تقریباً همیشه یک رویش به زمین است. فاز، از هندسه‌ی واقعی خورشید و ماه در همان تاریخ به دست می‌آید.",
+    "historyFa": "مقصد برنامه‌ی آپولو. شش فرود سرنشین‌دار میان ۱۹۶۹ و ۱۹۷۲ انجام شد.",
+    "radiusKm": 1737.4, "massKg": 7.346e22, "densityKgM3": 3344, "gravityMs2": 1.62, "escapeKms": 2.38,
+    "rotationHours": 655.72, "axialTiltDeg": 6.68, "orbitalPeriodDays": 27.3217,
+    "semiMajorAxisKm": 384400, "eccentricity": 0.0549, "inclinationDeg": 5.145,
+    "blackBodyK": 270.4, "tempMinK": 95, "tempMaxK": 390,
+    "tempNoteFa": "بازه‌ی ۹۵ تا ۳۹۰ کلوین برای استوای ماه در برگه‌ی ناسا آمده است.",
+    "atmosphereFa": "اگزوسفر بسیار رقیق. فشار شب حدود ۳×۱۰⁻¹⁵ بار و ترکیبش به‌خوبی ثابت نیست.",
+    "texture": "moon.jpg",
+    "sites": [
+      {
+        "nameFa": "محل فرود آپولو ۱۱", "nameEn": "Apollo 11 landing site",
+        "lat": 0.674, "lon": 23.473,
+        "summaryFa": "دریای آرامش. مختصات گردشده‌ی محل فرود.",
+        "source": { "name": "NASA Apollo 11", "url": "https://www.nasa.gov/mission/apollo-11/", "retrieved": "2026-11-15" }
+      }
+    ],
+    "visitors": ["apollo-11"],
+    "sources": [{ "name": "NASA Planetary Fact Sheet: Moon", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/moonfact.html", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "mars", "slug": "mars", "kind": "planet", "astroBody": "Mars",
+    "nameFa": "مریخ", "nameEn": "Mars", "moonCount": 2,
+    "summaryFa": "صحرای سرد و نازک‌جو. آتشفشان المپوس و دره‌ی مارینر از درشت‌ترین عارضه‌های سطح‌اند. دو قمر کوچک، فوبوس و دیموس، دورش می‌گردند.",
+    "radiusKm": 3389.5, "massKg": 6.4169e23, "densityKgM3": 3934, "gravityMs2": 3.73, "escapeKms": 5.03,
+    "rotationHours": 24.6229, "axialTiltDeg": 25.19, "orbitalPeriodDays": 686.98,
+    "semiMajorAxisKm": 227956000, "eccentricity": 0.0935, "inclinationDeg": 1.848,
+    "blackBodyK": 209.8, "meanTempK": 214, "tempMinK": 184, "tempMaxK": 242, "pressureBar": 0.00636,
+    "tempNoteFa": "میانگین حدود ۲۱۴ کلوین. بازه‌ی ۱۸۴ تا ۲۴۲ کلوین مربوط به محل فرود وایکینگ ۱ است.",
+    "atmosphereFa": "فشار میانگین در شعاع میانگین ۶٫۳۶ میلی‌بار. ترکیب حجمی عمده: ۹۵٫۱٪ کربن دی‌اکسید، ۲٫۵۹٪ نیتروژن، ۱٫۹۴٪ آرگون.",
+    "weatherFa": "بادهای وایکینگ در تابستان ۲ تا ۷ متر بر ثانیه و در توفان غبار ۱۷ تا ۳۰ متر بر ثانیه ثبت شده‌اند.",
+    "interior": [
+      { "nameFa": "هسته", "nameEn": "Core", "noteFa": "برگه یک شعاع ۱۸۳۰ کیلومتر داده و نوشته نتایج تازه‌تر ممکن است ۱۶۵۰ تا ۱۶۷۵ کیلومتر باشد. هر دو را با همین قید ببین، نه به‌عنوان یک عدد نهایی." }
+    ],
+    "texture": "mars.jpg",
+    "sites": [
+      {
+        "nameFa": "المپوس مونس", "nameEn": "Olympus Mons",
+        "lat": 18.65, "lon": 226.2,
+        "summaryFa": "بزرگ‌ترین آتشفشان سپری شناخته‌شده در سامانه.",
+        "source": { "name": "USGS Gazetteer of Planetary Nomenclature", "url": "https://planetarynames.wr.usgs.gov/", "retrieved": "2026-11-15" }
+      }
+    ],
+    "visitors": ["viking-1", "curiosity", "perseverance", "ingenuity"],
+    "sources": [{ "name": "NASA Planetary Fact Sheet: Mars", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "phobos", "slug": "phobos", "kind": "moon", "parentId": "mars",
+    "nameFa": "فوبوس", "nameEn": "Phobos",
+    "summaryFa": "قمر درونی مریخ. شکلش کروی نیست؛ سه نیم‌محور و جرم از برگه‌ی ناسا آمده، نه یک شعاع میانگین ساختگی.",
+    "radiusAxesKm": [13, 11.4, 9.1], "massKg": 1.06e16, "densityKgM3": 1900,
+    "orbitalPeriodDays": 0.31891, "semiMajorAxisKm": 9378, "eccentricity": 0.0151, "inclinationDeg": 1.08,
+    "sources": [{ "name": "NASA Planetary Fact Sheet: Mars, satellites", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "deimos", "slug": "deimos", "kind": "moon", "parentId": "mars",
+    "nameFa": "دیموس", "nameEn": "Deimos",
+    "summaryFa": "قمر بیرونی و کوچک‌تر مریخ.",
+    "radiusAxesKm": [7.8, 6, 5.1], "massKg": 2.4e15, "densityKgM3": 1750,
+    "orbitalPeriodDays": 1.26244, "semiMajorAxisKm": 23459, "eccentricity": 0.0005, "inclinationDeg": 1.79,
+    "sources": [{ "name": "NASA Planetary Fact Sheet: Mars, satellites", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/marsfact.html", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "jupiter", "slug": "jupiter", "kind": "planet", "astroBody": "Jupiter",
+    "nameFa": "مشتری", "nameEn": "Jupiter", "moonCount": 95, "ring": true,
+    "summaryFa": "بزرگ‌ترین سیاره. سطح سختی ندارد؛ شعاع استوایی در تراز یک بار سنجیده می‌شود. حلقه‌ای کم‌نور دارد که در نمای ناوبری فقط به‌صورت طرح نشان داده می‌شود، نه عکس حلقه.",
+    "historyFa": "از دوران باستان شناخته شده. شمار قمرها با کشف‌های تازه عوض می‌شود؛ عدد این صفحه همان برگه‌ی ناسا در تاریخ دریافت است.",
+    "radiusKm": 69911, "massKg": 1.89813e27, "densityKgM3": 1326, "gravityMs2": 25.92, "escapeKms": 59.5,
+    "rotationHours": 9.925, "axialTiltDeg": 3.13, "orbitalPeriodDays": 4332.589,
+    "semiMajorAxisKm": 778479000, "eccentricity": 0.0487, "inclinationDeg": 1.304,
+    "blackBodyK": 109.9, "meanTempK": 165,
+    "tempNoteFa": "۱۶۵ کلوین دما در تراز یک بار است. در ۰٫۱ بار، ۱۱۲ کلوین.",
+    "atmosphereFa": "عمدتاً هیدروژن مولکولی ۸۹٫۸٪ (عدم‌قطعیت ۲ واحد درصد) و هلیوم ۱۰٫۲٪. بادها تا حدود ۱۵۰ متر بر ثانیه در عرض‌های پایین.",
+    "texture": "jupiter.jpg",
+    "visitors": ["pioneer-10", "pioneer-11", "voyager-1", "voyager-2", "juno"],
+    "sources": [{ "name": "NASA Planetary Fact Sheet: Jupiter", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/jupiterfact.html", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "io", "slug": "io", "kind": "moon", "parentId": "jupiter",
+    "nameFa": "یو", "nameEn": "Io",
+    "summaryFa": "درونی‌ترین قمر بزرگ مشتری و فعال‌ترین جسم آتشفشانی شناخته‌شده. شعاع از ثابت منتشرشده در astronomy-engine است که با شعاع‌های متداول JPL یکی است. جرم را نیاورده‌ام.",
+    "radiusKm": 1821.6,
+    "sources": [{ "name": "astronomy-engine 2.1.19, IO_RADIUS_KM", "url": "https://github.com/cosinekitty/astronomy", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "europa", "slug": "europa", "kind": "moon", "parentId": "jupiter",
+    "nameFa": "اروپا", "nameEn": "Europa",
+    "summaryFa": "قمر یخی مشتری. زیر پوسته‌ی یخ، اقیانوس آب محتمل است؛ این جمله را به‌عنوان نتیجه‌ی قطعی اندازه‌گیری جرم آب ننویس، فقط به‌عنوان تفسیر رایج از داده‌های گالیله.",
+    "radiusKm": 1560.8,
+    "sources": [{ "name": "astronomy-engine 2.1.19, EUROPA_RADIUS_KM", "url": "https://github.com/cosinekitty/astronomy", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "ganymede", "slug": "ganymede", "kind": "moon", "parentId": "jupiter",
+    "nameFa": "گانیمد", "nameEn": "Ganymede",
+    "summaryFa": "بزرگ‌ترین قمر سامانه، بزرگ‌تر از تیر.",
+    "radiusKm": 2631.2,
+    "sources": [{ "name": "astronomy-engine 2.1.19, GANYMEDE_RADIUS_KM", "url": "https://github.com/cosinekitty/astronomy", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "callisto", "slug": "callisto", "kind": "moon", "parentId": "jupiter",
+    "nameFa": "کالیستو", "nameEn": "Callisto",
+    "summaryFa": "بیرونی‌ترین قمر گالیله‌ای، سطحی پر از دهانه و کهن.",
+    "radiusKm": 2410.3,
+    "sources": [{ "name": "astronomy-engine 2.1.19, CALLISTO_RADIUS_KM", "url": "https://github.com/cosinekitty/astronomy", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "saturn", "slug": "saturn", "kind": "planet", "astroBody": "Saturn",
+    "nameFa": "زحل", "nameEn": "Saturn", "moonCount": 274, "ring": true,
+    "summaryFa": "غول گازی با چگالی کمتر از آب. حلقه‌ی اصلی در صحنه با بافت آلفامپ Solar System Scope کشیده می‌شود. شمار قمرها همان برگه‌ی ناسا در تاریخ دریافت است و ممکن است بعداً عوض شود.",
+    "radiusKm": 58232, "massKg": 5.6832e26, "densityKgM3": 687, "gravityMs2": 11.19, "escapeKms": 35.5,
+    "rotationHours": 10.656, "axialTiltDeg": 26.73, "orbitalPeriodDays": 10755.699,
+    "semiMajorAxisKm": 1432041000, "eccentricity": 0.052, "inclinationDeg": 2.486,
+    "blackBodyK": 81, "meanTempK": 134,
+    "tempNoteFa": "۱۳۴ کلوین در تراز یک بار. در ۰٫۱ بار، ۸۴ کلوین.",
+    "atmosphereFa": "هیدروژن ۹۶٫۳٪ (عدم‌قطعیت ۲٫۴ واحد درصد) و هلیوم ۳٫۲۵٪. بادهای استوایی تا حدود ۴۰۰ متر بر ثانیه.",
+    "texture": "saturn.jpg",
+    "visitors": ["voyager-1", "voyager-2", "cassini"],
+    "sources": [{ "name": "NASA Planetary Fact Sheet: Saturn", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/saturnfact.html", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "uranus", "slug": "uranus", "kind": "planet", "astroBody": "Uranus",
+    "nameFa": "اورانوس", "nameEn": "Uranus", "moonCount": 28, "ring": true,
+    "summaryFa": "محور چرخش تقریباً در صفحه‌ی مدار خوابیده است. حلقه‌هایش باریک و تاریک‌اند و در این صحنه فقط طرح‌اند.",
+    "historyFa": "ویلیام هرشل، ۱۳ مارس ۱۷۸۱.",
+    "radiusKm": 25362, "massKg": 8.6811e25, "densityKgM3": 1270, "gravityMs2": 9.01, "escapeKms": 21.3,
+    "rotationHours": -17.24, "axialTiltDeg": 97.77, "orbitalPeriodDays": 30685.4,
+    "semiMajorAxisKm": 2867043000, "eccentricity": 0.0469, "inclinationDeg": 0.77,
+    "blackBodyK": 58.1, "meanTempK": 76,
+    "tempNoteFa": "۷۶ کلوین در تراز یک بار.",
+    "atmosphereFa": "هیدروژن ۸۲٫۵٪، هلیوم ۱۵٫۲٪، متان ۲٫۳٪. متان رنگ آبی-سبز را می‌سازد.",
+    "texture": "uranus.jpg",
+    "visitors": ["voyager-2"],
+    "sources": [{ "name": "NASA Planetary Fact Sheet: Uranus", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/uranusfact.html", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "neptune", "slug": "neptune", "kind": "planet", "astroBody": "Neptune",
+    "nameFa": "نپتون", "nameEn": "Neptune", "moonCount": 16, "ring": true,
+    "summaryFa": "دورترین غول سامانه. بادهای بسیار تند دارد. حلقه‌ها در صحنه طرح‌اند.",
+    "historyFa": "یوهان گاله در ۲۳ سپتامبر ۱۸۴۶ آن را دید، بر پایه‌ی پیش‌بینی آدامز و لووریه.",
+    "radiusKm": 24622, "massKg": 1.02409e26, "densityKgM3": 1638, "gravityMs2": 11.27, "escapeKms": 23.5,
+    "rotationHours": 16.11, "axialTiltDeg": 28.32, "orbitalPeriodDays": 60189.018,
+    "semiMajorAxisKm": 4514953000, "eccentricity": 0.0097, "inclinationDeg": 1.77,
+    "blackBodyK": 46.6, "meanTempK": 72,
+    "tempNoteFa": "۷۲ کلوین در تراز یک بار.",
+    "atmosphereFa": "هیدروژن ۸۰٪، هلیوم ۱۹٪، متان ۱٫۵٪، با عدم‌قطعیت‌هایی که در برگه آمده است.",
+    "texture": "neptune.jpg",
+    "visitors": ["voyager-2"],
+    "sources": [{ "name": "NASA Planetary Fact Sheet: Neptune", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/neptunefact.html", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "pluto", "slug": "pluto", "kind": "dwarf-planet", "astroBody": "Pluto",
+    "nameFa": "پلوتون", "nameEn": "Pluto", "moonCount": 5,
+    "summaryFa": "سیاره‌ی کوتوله در کمربند کویپر. از ۲۰۰۶ در تعریف IAU سیاره‌ی کوتوله است، نه سیاره‌ی هشتم. پنج قمر شناخته‌شده دارد؛ مشخصات شارون در صفحه‌ی خودش است.",
+    "historyFa": "کلاید تامبا، ۱۸ فوریه ۱۹۳۰.",
+    "radiusKm": 1188, "massKg": 1.303e22, "densityKgM3": 1854, "gravityMs2": 0.62, "escapeKms": 1.21,
+    "rotationHours": -153.2928, "axialTiltDeg": 119.51, "orbitalPeriodDays": 90560,
+    "semiMajorAxisKm": 5869656000, "eccentricity": 0.2444, "inclinationDeg": 17.16,
+    "blackBodyK": 37.5, "tempMinK": 24, "tempMaxK": 38, "pressureBar": 0.000013,
+    "tempNoteFa": "دمای سطح ۲۴ تا ۳۸ کلوین. فشار حدود ۱۳ میکروبار.",
+    "atmosphereFa": "حدود ۹۹٪ نیتروژن، با متان و کربن مونوکسید. جو نازک است و با فاصله از خورشید تغییر می‌کند.",
+    "visitors": ["new-horizons"],
+    "sources": [{ "name": "NASA Planetary Fact Sheet: Pluto", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "charon", "slug": "charon", "kind": "moon", "parentId": "pluto",
+    "nameFa": "شارون", "nameEn": "Charon",
+    "summaryFa": "قمر بزرگ پلوتون. آن‌قدر سنگین است که هر دو به گرد یک گرانیگاه بیرون از سطح پلوتون می‌چرخند.",
+    "radiusKm": 606, "massKg": 1.586e21, "densityKgM3": 1700, "gravityMs2": 0.29, "escapeKms": 0.59,
+    "orbitalPeriodDays": 6.3872, "semiMajorAxisKm": 19596,
+    "sources": [{ "name": "NASA Planetary Fact Sheet: Pluto, Charon", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/plutofact.html", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "ceres", "slug": "ceres", "kind": "dwarf-planet",
+    "nameFa": "سرس", "nameEn": "Ceres",
+    "summaryFa": "بزرگ‌ترین جسم کمربند سیارک‌ها و یک سیاره‌ی کوتوله. در این نسخه شعاع و جرم را ننوشته‌ام چون برگه‌ی جداگانه‌اش را در همین دریافت وارد نکردم. موقعیت آماری کمربند در صحنه‌ی منظومه، جای تک‌تک سیارک‌ها نیست.",
+    "historyFa": "جوزپه پیاتسی، ۱ ژانویه ۱۸۰۱.",
+    "visitors": ["dawn"],
+    "sources": [{ "name": "NASA Dawn / Ceres overview", "url": "https://science.nasa.gov/mission/dawn/", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "haumea", "slug": "haumea", "kind": "dwarf-planet",
+    "nameFa": "هائومئا", "nameEn": "Haumea",
+    "summaryFa": "سیاره‌ی کوتوله‌ی کشیده‌ی کمربند کویپر، با چرخش تند و دو قمر. اندازه‌ی دقیق را در این نسخه حذف کردم تا عدد تأییدنشده وارد صفحه نشود.",
+    "sources": [{ "name": "NASA Dwarf Planets", "url": "https://science.nasa.gov/dwarf-planets/", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "makemake", "slug": "makemake", "kind": "dwarf-planet",
+    "nameFa": "ماکی‌ماکی", "nameEn": "Makemake",
+    "summaryFa": "سیاره‌ی کوتوله در کمربند کویپر، سطح روشن و غنی از متان یخ‌زده. بدون عدد فیزیکی تأییدنشده.",
+    "sources": [{ "name": "NASA Dwarf Planets", "url": "https://science.nasa.gov/dwarf-planets/", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "eris", "slug": "eris", "kind": "dwarf-planet",
+    "nameFa": "اریس", "nameEn": "Eris",
+    "summaryFa": "سیاره‌ی کوتوله‌ای که بحث تعریف سیاره را در ۲۰۰۶ جلو انداخت. از پلوتون پرجرم‌تر دانسته می‌شود، اما جرم عددی را اینجا نیاورده‌ام.",
+    "sources": [{ "name": "NASA Dwarf Planets", "url": "https://science.nasa.gov/dwarf-planets/", "retrieved": "2026-11-15" }]
+  },
+  {
+    "id": "halley", "slug": "halley", "kind": "small-body",
+    "nameFa": "دنباله‌دار هالی", "nameEn": "1P/Halley",
+    "summaryFa": "معروف‌ترین دنباله‌دار دوره‌ای. آخرین حضیض ثبت‌شده‌اش فوریه ۱۹۸۶ بود و بازگشت بعدی حدود ۲۰۶۱ انتظار می‌رود. هسته را گیوتو از نزدیک دید. ابعاد دقیق هسته را در این نسخه عددگذاری نکردم.",
+    "historyFa": "ادموند هالی نشان داد بازگشت‌های تاریخی یک دنباله‌دارند. نام ۱P شماره‌ی دوره‌ای رسمی آن است.",
+    "visitors": ["giotto"],
+    "sources": [{ "name": "NASA Solar System Exploration: 1P/Halley", "url": "https://science.nasa.gov/solar-system/comets/1p-halley/", "retrieved": "2026-11-15" }]
+  }
+]

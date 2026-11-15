@@ -1,0 +1,11 @@
+{
+  "name": "آلبوم جهان",
+  "short_name": "آلبوم",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#07050f",
+  "theme_color": "#07050f",
+  "lang": "fa",
+  "dir": "rtl"
+}

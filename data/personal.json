@@ -1,0 +1,23 @@
+{
+  "starName": "نیایش",
+  "starNameEn": "Niyayesh",
+  "planetName": "یاسین",
+  "planetNameEn": "Yasin",
+  "systemName": "سامانه‌ی نیایش",
+  "designation": "YN-001",
+  "planetDesignation": "YN-001 b",
+  "message": "بعضی چیزها در هیچ کاتالوگی ثبت نمی‌شن، ولی همه‌چیز رو معنا می‌دن.",
+  "discoveryDate": "۲۰۲۶",
+  "discoverers": "نیایش و یاسین",
+  "disclaimer": "سیاره‌ی خیالی و نام‌گذاری شخصی؛ ثبت رسمی ندارد.",
+  "starClass": "G8V",
+  "starMassSun": 0.9,
+  "starRadiusSun": 0.88,
+  "starTeffK": 5450,
+  "planetRadiusEarth": 1.05,
+  "planetMassEarth": 1.1,
+  "semiMajorAxisAu": 0.95,
+  "eccentricity": 0.016,
+  "obliquityDeg": 22,
+  "rotationHours": 23.5
+}

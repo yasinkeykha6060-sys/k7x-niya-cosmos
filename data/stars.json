@@ -1,0 +1,419 @@
+[
+  {
+    "id": "hip-7588",
+    "slug": "achernar",
+    "nameFa": "آخر النهر",
+    "nameEn": "Achernar",
+    "traditionalFa": "آخر النهر",
+    "raDeg": 24.4285,
+    "decDeg": -57.2368,
+    "mag": 0.45,
+    "bv": -0.158,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-21421",
+    "slug": "aldebaran",
+    "nameFa": "دبران",
+    "nameEn": "Aldebaran",
+    "traditionalFa": "الدبران",
+    "raDeg": 68.9802,
+    "decDeg": 16.5093,
+    "mag": 0.87,
+    "bv": 1.538,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-24436",
+    "slug": "rigel",
+    "nameFa": "رجل الجبار",
+    "nameEn": "Rigel",
+    "traditionalFa": "رجل الجبار",
+    "raDeg": 78.6345,
+    "decDeg": -8.2016,
+    "mag": 0.18,
+    "bv": -0.03,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-24608",
+    "slug": "capella",
+    "nameFa": "عیوق",
+    "nameEn": "Capella",
+    "traditionalFa": "العیوق",
+    "raDeg": 79.1723,
+    "decDeg": 45.998,
+    "mag": 0.08,
+    "bv": 0.795,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-27989",
+    "slug": "betelgeuse",
+    "nameFa": "ابط الجوزا",
+    "nameEn": "Betelgeuse",
+    "traditionalFa": "ابط الجوزا",
+    "raDeg": 88.7929,
+    "decDeg": 7.4071,
+    "mag": 0.45,
+    "bv": 1.5,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-30438",
+    "slug": "canopus",
+    "nameFa": "سهیل",
+    "nameEn": "Canopus",
+    "traditionalFa": "سهیل",
+    "raDeg": 95.988,
+    "decDeg": -52.6957,
+    "mag": -0.62,
+    "bv": 0.164,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-32349",
+    "slug": "sirius",
+    "nameFa": "سیریوس",
+    "nameEn": "Sirius",
+    "traditionalFa": "شعرای یمانی",
+    "raDeg": 101.2872,
+    "decDeg": -16.7161,
+    "mag": -1.44,
+    "bv": 0.009,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-37279",
+    "slug": "procyon",
+    "nameFa": "شعرای شامی",
+    "nameEn": "Procyon",
+    "traditionalFa": "الشعری الشامیة",
+    "raDeg": 114.8255,
+    "decDeg": 5.225,
+    "mag": 0.4,
+    "bv": 0.432,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-37826",
+    "slug": "pollux",
+    "nameFa": "رأس التوأم مؤخر",
+    "nameEn": "Pollux",
+    "traditionalFa": "رأس التوأم المؤخر",
+    "raDeg": 116.329,
+    "decDeg": 28.0262,
+    "mag": 1.16,
+    "bv": 0.991,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-49669",
+    "slug": "regulus",
+    "nameFa": "قلب الاسد",
+    "nameEn": "Regulus",
+    "traditionalFa": "قلب الأسد",
+    "raDeg": 152.093,
+    "decDeg": 11.9672,
+    "mag": 1.36,
+    "bv": -0.087,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-60718",
+    "slug": "acrux",
+    "nameFa": "آلفا صلیب",
+    "nameEn": "Acrux",
+    "raDeg": 186.6496,
+    "decDeg": -63.0991,
+    "mag": 0.77,
+    "bv": -0.243,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-62434",
+    "slug": "mimosa",
+    "nameFa": "بتا صلیب",
+    "nameEn": "Mimosa",
+    "raDeg": 191.9303,
+    "decDeg": -59.6888,
+    "mag": 1.25,
+    "bv": -0.238,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-65474",
+    "slug": "spica",
+    "nameFa": "سماک اعزل",
+    "nameEn": "Spica",
+    "traditionalFa": "السماک الأعزل",
+    "raDeg": 201.2982,
+    "decDeg": -11.1613,
+    "mag": 0.98,
+    "bv": -0.235,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-69673",
+    "slug": "arcturus",
+    "nameFa": "سماک رامح",
+    "nameEn": "Arcturus",
+    "traditionalFa": "السماک الرامح",
+    "raDeg": 213.9153,
+    "decDeg": 19.1824,
+    "mag": -0.05,
+    "bv": 1.239,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-71683",
+    "slug": "alpha-centauri",
+    "nameFa": "آلفا قنطورس",
+    "nameEn": "Alpha Centauri",
+    "traditionalFa": "رجل قنطورس",
+    "raDeg": 219.9021,
+    "decDeg": -60.834,
+    "mag": -0.01,
+    "bv": 0.71,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-80763",
+    "slug": "antares",
+    "nameFa": "قلب العقرب",
+    "nameEn": "Antares",
+    "traditionalFa": "قلب العقرب",
+    "raDeg": 247.3519,
+    "decDeg": -26.432,
+    "mag": 1.06,
+    "bv": 1.865,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-91262",
+    "slug": "vega",
+    "nameFa": "وگا",
+    "nameEn": "Vega",
+    "traditionalFa": "نسر واقع",
+    "raDeg": 279.2347,
+    "decDeg": 38.7837,
+    "mag": 0.03,
+    "bv": -0.001,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-97649",
+    "slug": "altair",
+    "nameFa": "اتایر",
+    "nameEn": "Altair",
+    "traditionalFa": "نسر طائر",
+    "raDeg": 297.6958,
+    "decDeg": 8.8683,
+    "mag": 0.76,
+    "bv": 0.221,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-102098",
+    "slug": "deneb",
+    "nameFa": "دنب",
+    "nameEn": "Deneb",
+    "traditionalFa": "ذنب الدجاجة",
+    "raDeg": 310.358,
+    "decDeg": 45.2803,
+    "mag": 1.25,
+    "bv": 0.092,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "hip-113368",
+    "slug": "fomalhaut",
+    "nameFa": "فم الحوت",
+    "nameEn": "Fomalhaut",
+    "traditionalFa": "فم الحوت",
+    "raDeg": 344.4127,
+    "decDeg": -29.6222,
+    "mag": 1.17,
+    "bv": 0.145,
+    "page": true,
+    "summaryFa": "مختصات و قدر از فایل ستاره‌های d3-celestial (پایگاه HYG) است. فاصله، جرم، شعاع و رده‌ی طیفی در این فایل نبود و اینجا نیامده.",
+    "sources": [
+      {
+        "name": "d3-celestial stars.6.json، برگرفته از پایگاه HYG",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  },
+  {
+    "id": "m45",
+    "slug": "pleiades",
+    "nameFa": "ثریا",
+    "nameEn": "Pleiades",
+    "traditionalFa": "پروین",
+    "raDeg": 56.75,
+    "decDeg": 24.1167,
+    "mag": 1.2,
+    "page": true,
+    "summaryFa": "ثریا یک خوشه‌ی باز است، نه یک ستاره‌ی تنها. مختصات مرکز خوشه از فهرست مسیه در d3-celestial آمده. فاصله و تعداد اعضا در این فایل نبود.",
+    "sources": [
+      {
+        "name": "d3-celestial messier.json",
+        "url": "https://github.com/ofrohn/d3-celestial",
+        "retrieved": "2026-11-15"
+      }
+    ]
+  }
+]
