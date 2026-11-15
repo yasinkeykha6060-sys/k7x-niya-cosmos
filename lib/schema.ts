@@ -85,6 +85,9 @@ export const starSchema = z.object({
   con: z.string().optional(),
   page: z.boolean().optional(),
   summaryFa: z.string().optional(),
+  image: z.string().optional(),
+  imageCredit: z.string().min(1).optional(),
+  imageNote: z.string().optional(),
   sources: z.array(sourceSchema).min(1),
 });
 

@@ -37,7 +37,9 @@
         "url": "https://github.com/ofrohn/d3-celestial",
         "retrieved": "2026-11-15"
       }
-    ]
+    ],
+    "image": "aldebaran.jpg",
+    "imageCredit": "NASA, ESA, and STScI، CC BY-SA 4.0، File:Aldebaran.jpg"
   },
   {
     "id": "hip-24436",
@@ -57,7 +59,9 @@
         "url": "https://github.com/ofrohn/d3-celestial",
         "retrieved": "2026-11-15"
       }
-    ]
+    ],
+    "image": "rigel.jpg",
+    "imageCredit": "GellértEde، CC BY-SA 4.0، File:Rigel star.jpg"
   },
   {
     "id": "hip-24608",
@@ -97,7 +101,10 @@
         "url": "https://github.com/ofrohn/d3-celestial",
         "retrieved": "2026-11-15"
       }
-    ]
+    ],
+    "image": "betelgeuse.jpg",
+    "imageCredit": "ALMA (ESO/NAOJ/NRAO)/E. O’Gorman/P. Kervella، CC BY 4.0",
+    "imageNote": "تصویر رادیویی آلما از قرص ستاره است، نه نور مرئی."
   },
   {
     "id": "hip-30438",
@@ -117,7 +124,9 @@
         "url": "https://github.com/ofrohn/d3-celestial",
         "retrieved": "2026-11-15"
       }
-    ]
+    ],
+    "image": "canopus.jpg",
+    "imageCredit": "دامنه‌ی عمومی، Wikimedia Commons، File:Canopus.jpg"
   },
   {
     "id": "hip-32349",
@@ -137,7 +146,10 @@
         "url": "https://github.com/ofrohn/d3-celestial",
         "retrieved": "2026-11-15"
       }
-    ]
+    ],
+    "image": "sirius.jpg",
+    "imageCredit": "NASA / ESA / H. Bond / M. Barstow، دامنه‌ی عمومی، File:Sirius A and B Hubble photo",
+    "imageNote": "عکس هابل. نقطه‌ی کوچک کنار شعرای یمانی، همدم کوتوله‌ی سفید است."
   },
   {
     "id": "hip-37279",
@@ -157,7 +169,10 @@
         "url": "https://github.com/ofrohn/d3-celestial",
         "retrieved": "2026-11-15"
       }
-    ]
+    ],
+    "image": "procyon.jpg",
+    "imageCredit": "Giuseppe Donatiello، CC0",
+    "imageNote": "عکس زمینی. خط مدار را عکاس کشیده است."
   },
   {
     "id": "hip-37826",
@@ -216,7 +231,9 @@
         "url": "https://github.com/ofrohn/d3-celestial",
         "retrieved": "2026-11-15"
       }
-    ]
+    ],
+    "image": "acrux.png",
+    "imageCredit": "Alain r، CC BY-SA 3.0، File:Acrux.png"
   },
   {
     "id": "hip-62434",
@@ -355,7 +372,9 @@
         "url": "https://github.com/ofrohn/d3-celestial",
         "retrieved": "2026-11-15"
       }
-    ]
+    ],
+    "image": "altair.jpg",
+    "imageCredit": "NASA/JPL/Caltech/Steve Golden، دامنه‌ی عمومی، File:Altair.jpg"
   },
   {
     "id": "hip-102098",
@@ -395,7 +414,10 @@
         "url": "https://github.com/ofrohn/d3-celestial",
         "retrieved": "2026-11-15"
       }
-    ]
+    ],
+    "image": "fomalhaut.png",
+    "imageCredit": "NASA, ESA, CSA؛ پردازش András Gáspár و Alyssa Pagan، دامنه‌ی عمومی",
+    "imageNote": "جیمز وب. خود ستاره در مرکز پوشانده شده تا قرص غبار دیده شود."
   },
   {
     "id": "m45",
@@ -414,6 +436,9 @@
         "url": "https://github.com/ofrohn/d3-celestial",
         "retrieved": "2026-11-15"
       }
-    ]
+    ],
+    "image": "pleiades.jpg",
+    "imageCredit": "NASA, ESA, AURA/Caltech، دامنه‌ی عمومی، بررسی آسمان رقومی",
+    "imageNote": "خوشه‌ی ثریا. خط‌ها روی تصویر از خود نگاتیو ناسا است."
   }
 ]

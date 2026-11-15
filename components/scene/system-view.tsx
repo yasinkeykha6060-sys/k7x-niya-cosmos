@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import { asset } from "@/lib/paths";
 import { usePrefs } from "@/components/ui/prefs";
 
@@ -31,7 +31,7 @@ const NAMES: Record<(typeof WORLDS)[number]["slug"], string> = {
 
 type Mode = "real" | "nav";
 
-export function SystemView() {
+export function SystemView({ fill = false, children }: { fill?: boolean; children?: ReactNode }) {
   const host = useRef<HTMLDivElement>(null);
   const scaleNote = useRef<HTMLParagraphElement>(null);
   const { quality } = usePrefs();
@@ -344,7 +344,8 @@ export function SystemView() {
   }, []);
 
   return (
-    <div className="stage" ref={host} aria-label="منظومه‌ی شمسی">
+    <div className={fill ? "stage stage-full" : "stage"} ref={host} aria-label="منظومه‌ی شمسی">
+      {children}
       {fallback && <div className="overlay-copy panel"><p>{fallback}</p></div>}
       <div className="hud panel">
         <div className="meta"><bdi className="num" ref={clock}>UTC</bdi></div>

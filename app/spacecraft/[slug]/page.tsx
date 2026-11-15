@@ -21,8 +21,7 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
       {craft.endDate && <p>پایان: <bdi className="num">{craft.endDate}</bdi></p>}
       {craft.heightM && <p>ارتفاع: <bdi className="num">{craft.heightM} m</bdi></p>}
       <ul>{craft.achievements.map((item) => <li key={item}>{item}</li>)}</ul>
-      {craft.animation && <CraftScene kind={craft.animation} />}
-      <p className="meta">مدل، بازسازی با کد است.</p>
+      <CraftScene slug={craft.slug} category={craft.category} kind={craft.animation} />
       {craft.targets?.map((id) => <p key={id}><Link href={id === "moon" ? "/moons/moon/" : id === "pluto" || id === "ceres" ? `/dwarf-planets/${id}/` : id === "halley" ? "/small-bodies/halley/" : id === "sun" ? "/solar-system/" : `/planets/${id}/`}>{id}</Link></p>)}
       <ul>{craft.sources.map((source) => <li key={source.url}><a href={source.url}>{source.name}</a></li>)}</ul>
     </article>

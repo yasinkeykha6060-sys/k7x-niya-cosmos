@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { GlobeView } from "@/components/scene/globe-view";
 import { stars } from "@/lib/catalog";
+import { asset } from "@/lib/paths";
 
 function starTint(bv?: number): string {
   const x = bv ?? 0.6;
@@ -25,6 +26,12 @@ export default async function Page({ params }: { params: Promise<{ slug: string 
     <article className="page">
       <h1>{star.nameFa}</h1>
       <p className="lede ltr">{star.nameEn}{star.traditionalFa ? ` · ${star.traditionalFa}` : ""}</p>
+      {star.image && (
+        <figure>
+          <img className="starshot" src={asset(`/stars/${star.image}`)} alt={star.nameFa} />
+          <figcaption className="meta">{star.imageCredit}{star.imageNote ? ` — ${star.imageNote}` : ""}</figcaption>
+        </figure>
+      )}
       <GlobeView
         emissive
         cluster={star.slug === "pleiades"}

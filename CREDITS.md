@@ -42,6 +42,21 @@ Vazirmatn، فایل محلی در `fonts/`.
 
 three.js از npm. Next.js و React از npm. هیچ قلم و بافتی از شبکه‌ی تحویل محتوا بار نمی‌شود.
 
+## عکس ستاره‌ها
+
+فقط فایل‌هایی که تصویرشان با نام ستاره جور بود نگه داشته شده‌اند. چند فایل ویکی‌مدیا با نام ستاره عکس ساختمان، کشتی یا نقاشی بودند و حذف شدند.
+
+- `sirius.jpg`: ناسا / اسا / اچ. باند / ام. بارستو، دامنه‌ی عمومی. File:Sirius A and B Hubble photo.
+- `canopus.jpg`: دامنه‌ی عمومی. File:Canopus.jpg.
+- `altair.jpg`: NASA/JPL/Caltech/Steve Golden، دامنه‌ی عمومی.
+- `betelgeuse.jpg`: ALMA (ESO/NAOJ/NRAO)/E. O’Gorman/P. Kervella، CC BY 4.0. تصویر رادیویی است.
+- `aldebaran.jpg`: NASA, ESA, and STScI، CC BY-SA 4.0.
+- `rigel.jpg`: GellértEde، CC BY-SA 4.0.
+- `pleiades.jpg`: NASA, ESA, AURA/Caltech، دامنه‌ی عمومی.
+- `procyon.jpg`: Giuseppe Donatiello، CC0.
+- `fomalhaut.png`: NASA, ESA, CSA، دامنه‌ی عمومی. ستاره در مرکز پوشانده شده.
+- `acrux.png`: Alain r، CC BY-SA 3.0.
+
 ## چه چیزی عکس واقعی نیست
 
 سیاره‌ی شخصی YN-001 b با سایه‌زن ساخته شده و برچسب «سیاره‌ی خیالی» دارد. مدل فضاپیماها بازسازی با کد است. زمینه‌ی ستاره‌ای صفحه‌ی منظومه تزئینی است و کاتالوگ نیست. کاتالوگ واقعی آسمان فقط در صفحه‌ی `/sky/` است.
